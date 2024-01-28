@@ -21,7 +21,7 @@ const RESOURCES = {"assets/assets/assets/lib/ripple/bower.json": "62374128953120
 "assets/assets/assets/lib/jquery-ui/jquery-ui.theme.min.css": "a68e099a0a944bddf4a7a9c81f5f4100",
 "assets/assets/assets/lib/jquery-ui/external/jquery/jquery.js": "2849239b95f5a9a2aea3f6ed9420bb88",
 "assets/assets/assets/lib/jquery-ui/index.html": "126b7673a608fef2405e35be7c7dc8e8",
-"/": "37026198fcbfb9b04e02f6e2219f46ea",
+"/": "9f1d5022603938d7e1da12be3b545ff2",
 "assets/assets/assets/lib/jquery-ui/package.json": "f9a98ca55ce790fc5ffc1387f6ffa591",
 "assets/assets/assets/lib/jquery-ui/jquery-ui.structure.css": "f53cdce0f1dcd34dbfbecd2d94d09db1",
 "assets/assets/assets/lib/jquery-ui/jquery-ui.structure.min.css": "80315aa79cfb7e5a701d81160bd3060f",
@@ -74,7 +74,7 @@ const RESOURCES = {"assets/assets/assets/lib/ripple/bower.json": "62374128953120
 "manifest.json": "629f55768a1339a220f9424fab4e5ebb",
 "version.json": "a83184e2be2b6181307457ac25a64746",
 "flutter.js": "7d69e653079438abfbb24b82a655b0a4",
-"index.html": "37026198fcbfb9b04e02f6e2219f46ea",
+"index.html": "9f1d5022603938d7e1da12be3b545ff2",
 "canvaskit/skwasm.worker.js": "bfb704a6c714a75da9ef320991e88b03",
 "canvaskit/canvaskit.js": "eb8797020acdbdf96a12fb0405582c1b",
 "canvaskit/chromium/canvaskit.js": "0ae8bbcc58155679458a0f7a00f66873",
@@ -86,7 +86,7 @@ const RESOURCES = {"assets/assets/assets/lib/ripple/bower.json": "62374128953120
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"main.dart.js": "ee53270f1d5db4724cf5291d311191bf"};
+"main.dart.js": "c7f8002826753f032c98995b22b0f060"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
